@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Advanced</title>
+</head>
+<body>
+    <div class="site">
+        <header class="site-header">
+             {% if page.title %} 
+            <h1 class="site-heading">{{page.title}}</h1>
+            {% endif %}
+        </header>
+        <main class="site-main">
+            {{ content }}
+        </main>
+        <footer class="site-footer">
+            <p>All rights reserved &copy; 2019</p>
+        </footer>
+    </div>
+</body>
+</html>
