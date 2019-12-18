@@ -1,4 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Gelasio&display=swap');
+html{
+    box-sizing: border-box;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
 body{
-    background-color: rgb(230, 196, 196);
-    color: rgb(184, 48, 70);
+    font-family: 'Gelasio', serif;
+}
+
+ul{
+    list-style: none;
+}
+
+
+/* Styling the header */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em 1em 2em;
+    background-color: rgba(173, 161, 147, 0.3);
+    color: rgb(85, 73, 56);
+}
+
+header h1{
+    margin-top: 0.1em;
+}
+
+header ul{
+    display: flex;
+    padding-top: 0.5em;
+}
+
+header ul:nth-child(2){
+    margin-top: 0.3em;
+    font-size: 18px;
+}
+
+header ul:nth-child(3) li input{
+    background-color: rgb(85, 73, 56);
+    border: none;
+    padding: 0.5em 0.7em 0.5em 0.7em;
+    color: white;
+}
+header ul:nth-child(3) li:nth-child(2){
+    margin-top: 0.4em;
+}
+header ul li{
+    margin: 0 1em 0 1em;
+}
+
+/* Cravings part */
+
+.cravings{
+    background-image: url('../Images/craving.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    width: 100%;
+    height: 65vh;
+    color: white;
+    padding-top: 8em;
+}
+
+.cravings section h1{
+    font-size: 3em;
+    text-align: center;
+}
+
+.search{
+    width: 50%;
+    height: 5vh;
+    background-color: rgb(255, 255, 255,0.7);
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+.search i{
+    margin: 0.6em;
+}
+.cravings section{
+    width: 50%;
+    height: 30vh;
+    margin: 0 auto;
+}
+ /* Main */
+main{
+    background-image: url('../Images/background.jpg');
+    background-position: center;
+    padding-top: 2em;
+}
+
+.post{
+    font-size: x-large;
+    width: 80%;
+    height: 65vh;
+    background-color: rgb(230, 227, 222);
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+.post_ul{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.post_image{
+    width: 60%;
+    height: 100%;
+    margin: 0;
+}
+
+.post_image img{
+    width: 100%;
+    height: 100%;
+}
+
+.post_text{
+    text-align:center;
+    margin: 0 auto;
+    margin-top: 8em;
+
+}
+
+.post_text input{
+    margin-top: 2em;
+    padding: 0.7em 1.3em 0.7em 1.3em;
+    border: none;
+    background-color: rgb(85, 73, 56);
+    color: white;
+}
+
+
+.toolbox{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.toolbox .heading{
+    text-align: center;
+    font-size: x-large;
+    padding: 0.3em;
+    color: rgb(85, 73, 56);
+    font-weight: bold;
+    border: none;
+    width: 20%;
+    margin: 0 auto;
+    background-color: rgb(230, 227, 222,0.7);
+}
+
+.toolbox hr{
+    color: white;
+    border: 1px solid white;
+    margin: 0 auto;
+}
+
+.cookie{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+.cookie ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cookie ul li{
+    text-align: center;
+    font-style: italic;
+    font-size: large;
+    width: 20%;
+    background-color: rgb(230, 227, 222,0.7);
+}
+
+.cookie ul li img{
+    width: 100%;
+    height: 25vh;
+}
+
+.cookie ul li p{
+    padding: 0.5em;
+}
+
+
+.toolbox input{
+    padding: 0.7em 1.3em 0.7em 1.3em;
+    border: none;
+    background-color: rgba(228, 42, 9, 0.774);
+    color: white;
+    width: 20%;
+    margin-top: 3em;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer{
+    background-color: rgb(230, 227, 222);
+    opacity: 0.9;
+    margin-top: 2em;
+    display: flex;
+    padding: 2em;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+footer ul li{
+    margin: 0.5em;
+    border-right: 1px solid grey;
+    padding-right: 0.5em;
+}
+
+footer ul li:nth-child(4),
+.last li:nth-child(3){
+    border: none;
 }

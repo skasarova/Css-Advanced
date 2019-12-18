@@ -10,16 +10,52 @@
 </head>
 <body>  
     <div class="site">
-        <header class="site-header">
-             {% if page.title %} 
-            <h1 class="site-heading">{{page.title}}</h1>
-            {% endif %} 
-        </header>
+        <header>
+            <h1>Food</h1>
+            <ul>
+                <li>About</li>
+                <li>Recipes</li>
+                <li>Cuisines</li>
+                <li>Tips</li>
+            </ul>
+            <ul>
+                <li><input type="button" value="Log In"></li>
+                <li><i class="fa fa-search" style = "color: rgb(0, 0, 0)"></i></li>
+            </div>
+         </header>
+
+        <!-- <nav class="nav">
+            <ul>
+                {% for page in site.pages%}
+                    {% if page.title %}
+                    <li><a href="{{ site.baseurl }}/{{ page.title }}"></a> </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </nav> -->
         <main class="site-main">
             {{ content }}
         </main>
         <footer class="site-footer">
-            <p>All rights reserved &copy; 2019</p>
+            <ul>
+                <li>About</li>
+                <li>Team</li>
+                <li>Events</li>
+                <li>Jobs</li>
+            </ul>
+            <ul>
+                <li>FAQ</li>
+                <li>My Orders</li>
+                <li>Favorites</li>
+                <li>Contacts</li>
+            </ul>
+            <ul class="last">
+                <li>
+                   <i class="fa fa-copyright"></i> 2019 
+                </li>
+                <li>Terms</li>
+                <li>Privacy</li>
+            </ul>
         </footer>
     </div>
 </body>
