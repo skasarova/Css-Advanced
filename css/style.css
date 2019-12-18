@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Gelasio&display=swap');
+@import url('variables.css');
+
 html{
     box-sizing: border-box;
 }
@@ -30,7 +32,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 1em 2em 1em 2em;
-    background-color: rgba(173, 161, 147, 0.3);
+    background-color: var(--color-header);
     color: rgb(85, 73, 56);
 }
 
@@ -62,13 +64,16 @@ header ul li{
 }
 
 .log-in:hover{
-    background-color: rgb(255, 255, 255,0.3);
-    color: black;
+    background-color: var(--color-blueberry);
 }
 
 .menu li:hover{
-    border-bottom: 2px solid purple;
+    border-bottom: 3px solid var(--color-blueberry);
 }
+
+
+
+
 
 /* Cravings part */
 
@@ -206,7 +211,7 @@ header ul li{
     font-style: italic;
     font-size: large;
     width: 20%;
-    background-color: rgb(230, 227, 222,0.7);
+    background-color: var(--color-footer);
 }
 
 .cookie ul li img{
@@ -217,7 +222,6 @@ header ul li{
 .cookie ul li p{
     padding: 0.5em;
 }
-
 
 .toolbox input{
     padding: 0.7em 1.3em 0.7em 1.3em;
@@ -232,7 +236,7 @@ header ul li{
 /* Footer */
 
 footer{
-    background-color: rgb(230, 227, 222);
+    background-color: var(--color-footer);
     opacity: 0.9;
     margin-top: 2em;
     display: flex;
