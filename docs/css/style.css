@@ -177,6 +177,7 @@ header ul li{
     text-align: center;
 }
 
+
 .toolbox .heading{
     text-align: center;
     font-size: x-large;
@@ -212,8 +213,12 @@ header ul li{
     font-size: large;
     width: 20%;
     background-color: var(--color-footer);
+    transition: transform 0.5s ease-in-out;
 }
 
+.cookie ul li:hover{
+    transform: translateY(-5%);
+}
 /* rgb(230, 227, 222,0.7); */
 
 .cookie ul li img{
@@ -225,7 +230,7 @@ header ul li{
     padding: 0.5em;
 }
 
-.toolbox input{
+.shop-now{
     padding: 0.7em 1.3em 0.7em 1.3em;
     border: none;
     background-color: rgba(228, 42, 9, 0.774);
@@ -233,6 +238,11 @@ header ul li{
     width: 20%;
     margin-top: 3em;
     font-weight: bold;
+    transition: transform 0.5s ease-in-out;
+}
+
+.shop-now:hover{
+    transform: scale(1.2);
 }
 
 /* Footer */
