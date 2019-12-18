@@ -20,6 +20,10 @@ ul{
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
 
 /* Styling the header */
 header{
@@ -57,7 +61,28 @@ header ul li{
     margin: 0 1em 0 1em;
 }
 
+.log-in:hover{
+    background-color: rgb(255, 255, 255,0.3);
+    color: black;
+}
+
+.menu li:hover{
+    border-bottom: 2px solid purple;
+}
+
 /* Cravings part */
+
+
+.craving-search{
+    background-color: rgb(255, 255, 255,0);
+    border: none;
+    height: 5vh;
+    width: 80%;
+}
+
+.craving-search:focus {
+    outline:none;
+}
 
 .cravings{
     background-image: url('../Images/craving.jpg');
@@ -93,10 +118,9 @@ header ul li{
     margin: 0 auto;
 }
  /* Main */
-main{
+.universal-main{
     background-image: url('../Images/background.jpg');
     background-position: center;
-    padding-top: 2em;
 }
 
 .post{
