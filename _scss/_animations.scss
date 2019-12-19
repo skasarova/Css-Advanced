@@ -1,0 +1,26 @@
+
+  // Animation for snowflake ##{$i}
+  @keyframes snowflake-#{$i} {
+    0% {
+      transform: rotate(0deg);
+      left: $left;
+      top: -$top;
+    }
+    25% {
+      left: $left + 1%;
+    }
+
+    50% {
+      left: $left;
+    }
+
+    75% {
+      left: $left + 2%;
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(360deg);
+      top: $top + 40%;
+      opacity: 0;
+    }
+  }
