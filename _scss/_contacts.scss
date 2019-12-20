@@ -1,0 +1,26 @@
+@import '_variables.scss';
+@import '_animations.scss';
+
+.contacts-div{
+    border-top: 1px solid rgba(146, 137, 137, 0.24);
+}
+
+.contacts-main{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-footer);
+    width: 80%;
+    height: 80vh;
+    margin: 0 auto;
+    margin-top: 2em;
+    padding-top: 2em;
+}
+
+iframe{
+margin-left: 2em;
+}
+
+.contacts-main p{
+    margin-right: 5em;
+    margin-top: 2em;
+}
